@@ -1,0 +1,8 @@
+  Sender: sent 182 data packets, 367 acks
+          discarded 38 data packets, 79 acks
+          runLength 22.824386695
+Receiver: received 367 data packets, 119 acks
+          discarded 0 arrivals 
+          runLength 22.916975634
+  SrcSnk: sent 100, received 200
+          runLength 20.0

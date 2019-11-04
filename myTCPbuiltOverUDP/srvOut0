@@ -1,0 +1,81 @@
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[0] testing 0
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[1] testing 1
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[3] testing 3
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[1]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[2]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[2]
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[4] testing 4
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[2]
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[5] testing 5
+discarding ack[2]
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[4] testing 4
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[5] testing 5
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[6] testing 6
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[2]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[2]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[2]
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[2] testing 2
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[4] testing 4
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[5] testing 5
+discarding ack[3]
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[6] testing 6
+discarding ack[3]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[3]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[3]
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[7] testing 7
+discarding ack[3]
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[3] testing 3
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[4] testing 4
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[5] testing 5
+discarding ack[4]
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[6] testing 6
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[7] testing 7
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[5]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[6]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[7]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[8]
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[8] testing 8
+/127.0.0.1:11313 received from /127.0.0.1:55841 data[9] testing 9
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[9]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 ack[0]
+discarding data[0] testing 0
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[1] testing 1
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[0]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[2] testing 2
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[0]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[3] testing 3
+discarding data[4] testing 4
+discarding data[0] testing 0
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[1] testing 1
+discarding data[2] testing 2
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[3] testing 3
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[4] testing 4
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[0]
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[0]
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[0]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[0] testing 0
+discarding data[1] testing 1
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[2] testing 2
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[3] testing 3
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[4] testing 4
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[1]
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[1]
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[1]
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[1]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[1] testing 1
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[2] testing 2
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[3] testing 3
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[4] testing 4
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[5] testing 5
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[3]
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[5]
+/127.0.0.1:11313 sending to /127.0.0.1:55841 data[5] testing 5
+/127.0.0.1:11313 received from /127.0.0.1:55841 ack[6]
+  Sender: sent 21 data packets, 20 acks
+          discarded 5 data packets, 5 acks
+          runLength 2.910701777
+Receiver: received 20 data packets, 12 acks
+          discarded 0 arrivals 
+          runLength 3.011154605
+  SrcSnk: sent 6, received 10
+          runLength 0.3
