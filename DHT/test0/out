@@ -1,0 +1,64 @@
+put foo bar
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:bar
+ttl:98
+
+put who hah
+CSE473 DHTPv0.1
+type:success
+key:who
+tag:1
+value:hah
+ttl:98
+
+get foo
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:bar
+ttl:98
+
+get who
+CSE473 DHTPv0.1
+type:success
+key:who
+tag:1
+value:hah
+ttl:98
+
+get goodbye
+CSE473 DHTPv0.1
+type:no match
+key:goodbye
+tag:1
+ttl:98
+
+get
+Usage: DhtClient serverName configurationFile command key [value] [ttl]
+get bar
+CSE473 DHTPv0.1
+type:no match
+key:bar
+tag:1
+ttl:98
+
+put foo toast is tasty
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:toast is tasty
+ttl:98
+
+get foo
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:toast is tasty
+ttl:98
+

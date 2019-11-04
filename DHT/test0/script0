@@ -1,0 +1,32 @@
+cd ../
+
+java DhtServer localhost 1 cfg debug >test0/log&
+sleep 2
+
+echo put foo bar
+java DhtClient localhost cfg put foo bar
+echo put who hah
+java DhtClient localhost cfg put who hah
+echo get foo
+java DhtClient localhost cfg get foo
+echo get who
+java DhtClient localhost cfg get who
+echo get goodbye
+java DhtClient localhost cfg get goodbye
+echo get
+java DhtClient localhost cfg get
+echo get bar
+java DhtClient localhost cfg get bar
+echo put foo "toast is tasty"
+java DhtClient localhost cfg put foo "toast is tasty"
+echo get foo
+java DhtClient localhost cfg get foo
+
+#sliently kill all java process
+exec 3>&2          # 3 is now a copy of 2
+exec 2> /dev/null  # 2 now points to /dev/null
+killall -9 java >/dev/null 2>&1
+sleep 1            # sleep to wait for process to die
+exec 2>&3          # restore stderr to saved
+exec 3>&-          # close saved version
+

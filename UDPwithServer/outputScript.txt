@@ -1,0 +1,21 @@
+kaiashk@onlusr:~/cse473s-f19-students-gai.ashkenazy/lab2$ cat outputScrip.txt
+Ok
+updated:hah
+updated:goodbye
+ok:slim jim
+ok:ho ho
+ok:world
+goodbye:world::foo:toast is tasty::foo bar:slim jim::hah:ho ho
+Error:unrecognizable input:get
+Error:unrecognizable input:foo:who
+no match
+updated:foo
+ok:toast is tasty
+updated:hah
+goodbye:world::foo:toast is tasty::foo bar:slim jim::hah:yolo
+goodbye:world::foo:toast is tasty::foo bar:slim jim::hah:yolo
+no match
+goodbye:world::foo:toast is tasty::foo bar:slim jim::hah:yolo
+Ok
+goodbye:world::foo:toast is tasty::hah:yolo
+kaiashk@onlusr:~/cse473s-f19-students-gai.ashkenazy/lab2$

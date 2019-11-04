@@ -1,0 +1,25 @@
+java TcpMapClient h7x1 <<endOfInput
+put:foo bar:slim jim
+put:hah:ho ho
+put:goodbye:world
+get:foo bar
+get:hah
+get:goodbye
+get all
+get
+foo:who
+get:bar
+put:foo:toast is tasty
+get:foo
+put:hah:yolo
+get all
+
+endOfInput
+java TcpMapClient h7x1 <<endOfInput
+get all
+remove:rab oof
+get all
+remove:foo bar
+get all
+
+endOfInput

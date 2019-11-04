@@ -1,0 +1,256 @@
+put foo bar
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:bar
+ttl:98
+
+put who hah
+CSE473 DHTPv0.1
+type:success
+key:who
+tag:1
+value:hah
+ttl:92
+
+get foo
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:bar
+ttl:95
+
+get who
+CSE473 DHTPv0.1
+type:success
+key:who
+tag:1
+value:hah
+ttl:93
+
+get goodbye
+CSE473 DHTPv0.1
+type:no match
+key:goodbye
+tag:1
+ttl:96
+
+get
+Usage: DhtClient serverName configurationFile command key [value] [ttl]
+get bar
+CSE473 DHTPv0.1
+type:no match
+key:bar
+tag:1
+ttl:94
+
+put foo toast is tasty
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:toast is tasty
+ttl:94
+
+get foo
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:toast is tasty
+ttl:93
+
+put flim flam
+CSE473 DHTPv0.1
+type:success
+key:flim
+tag:1
+value:flam
+ttl:95
+
+put flip flop
+CSE473 DHTPv0.1
+type:success
+key:flip
+tag:1
+value:flop
+ttl:96
+
+put slim jim
+CSE473 DHTPv0.1
+type:success
+key:slim
+tag:1
+value:jim
+ttl:94
+
+put abra cadabra
+CSE473 DHTPv0.1
+type:success
+key:abra
+tag:1
+value:cadabra
+ttl:93
+
+put chocolate fudge
+CSE473 DHTPv0.1
+type:success
+key:chocolate
+tag:1
+value:fudge
+ttl:94
+
+put dungeons dragons
+CSE473 DHTPv0.1
+type:success
+key:dungeons
+tag:1
+value:dragons
+ttl:96
+
+put political follies
+CSE473 DHTPv0.1
+type:success
+key:political
+tag:1
+value:follies
+ttl:95
+
+put fantasy football
+CSE473 DHTPv0.1
+type:success
+key:fantasy
+tag:1
+value:football
+ttl:98
+
+get flim
+CSE473 DHTPv0.1
+type:success
+key:flim
+tag:1
+value:flam
+ttl:94
+
+get flip
+CSE473 DHTPv0.1
+type:success
+key:flip
+tag:1
+value:flop
+ttl:94
+
+get slim
+CSE473 DHTPv0.1
+type:success
+key:slim
+tag:1
+value:jim
+ttl:96
+
+get abra
+CSE473 DHTPv0.1
+type:success
+key:abra
+tag:1
+value:cadabra
+ttl:98
+
+get chocolate
+CSE473 DHTPv0.1
+type:success
+key:chocolate
+tag:1
+value:fudge
+ttl:95
+
+get dungeons
+CSE473 DHTPv0.1
+type:success
+key:dungeons
+tag:1
+value:dragons
+ttl:98
+
+get political
+CSE473 DHTPv0.1
+type:success
+key:political
+tag:1
+value:follies
+ttl:95
+
+get fantasy
+CSE473 DHTPv0.1
+type:success
+key:fantasy
+tag:1
+value:football
+ttl:95
+
+get flim
+CSE473 DHTPv0.1
+type:success
+key:flim
+tag:1
+value:flam
+ttl:95
+
+get flip
+CSE473 DHTPv0.1
+type:success
+key:flip
+tag:1
+value:flop
+ttl:98
+
+get slim
+CSE473 DHTPv0.1
+type:success
+key:slim
+tag:1
+value:jim
+ttl:91
+
+get abra
+CSE473 DHTPv0.1
+type:success
+key:abra
+tag:1
+value:cadabra
+ttl:98
+
+get chocolate
+CSE473 DHTPv0.1
+type:success
+key:chocolate
+tag:1
+value:fudge
+ttl:94
+
+get dungeons
+CSE473 DHTPv0.1
+type:success
+key:dungeons
+tag:1
+value:dragons
+ttl:96
+
+get political
+CSE473 DHTPv0.1
+type:success
+key:political
+tag:1
+value:follies
+ttl:98
+
+get fantasy
+CSE473 DHTPv0.1
+type:success
+key:fantasy
+tag:1
+value:football
+ttl:93
+

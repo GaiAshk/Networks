@@ -1,0 +1,12 @@
+#! /bin/bash
+source /users/onl/.topology
+
+ssh $h7x1 "ping -c2 h6x1"
+ssh $h6x1 "ping -c2 h3x2"
+ssh $h3x2 "ping -c2 h2x5"
+ssh $h2x5 "ping -c2 h2x4"
+ssh $h2x4 "ping -c2 h2x3"
+ssh $h2x3 "ping -c2 h1x1"
+ssh $h1x1 "ping -c2 h5x2"
+ssh $h5x2 "ping -c2 h4x2"
+ssh $h4x2 "ping -c2 h7x1"

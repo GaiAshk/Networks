@@ -1,0 +1,11 @@
+#! /bin/bash
+source /users/onl/.topology
+
+ssh $h7x1 "killall -9 java"
+ssh $h6x1 "killall -9 java"
+ssh $h3x2 "killall -9 java"
+ssh $h2x5 "killall -9 java"
+ssh $h2x4 "killall -9 java"
+ssh $h2x3 "killall -9 java"
+ssh $h1x1 "killall -9 java"
+ssh $h5x2 "killall -9 java"

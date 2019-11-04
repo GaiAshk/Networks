@@ -1,0 +1,55 @@
+/192.168.2.3:52181 sending packet to /192.168.2.4:55532
+CSE473 DHTPv0.1
+type:join
+tag:1
+ttl:100
+
+/192.168.2.3:52181 received packet from /192.168.2.4:55532
+CSE473 DHTPv0.1
+type:success
+hashRange:1342177278:1610612734
+senderInfo:192.168.2.4:55532:1073741823
+succInfo:192.168.1.1:43692:1610612734
+predInfo:192.168.2.4:55532:1073741823
+ttl:99
+
+rteTbl=[(/192.168.2.4:55532,1073741823)]
+rteTbl=[(/192.168.2.4:55532,1073741823)]
+rteTbl=[(/192.168.2.4:55532,1073741823), (/192.168.1.1:43692,1610612734)]
+/192.168.2.3:52181 received packet from /192.168.4.2:41469
+CSE473 DHTPv0.1
+type:get
+key:chocolate
+tag:1
+ttl:99
+
+/192.168.2.3:52181 sending packet to /192.168.1.1:43692
+CSE473 DHTPv0.1
+type:get
+key:chocolate
+relayAdr:192.168.2.3:52181
+clientAdr:192.168.4.2:41469
+tag:1
+ttl:99
+
+/192.168.2.3:52181 received packet from /192.168.7.1:55982
+CSE473 DHTPv0.1
+type:success
+key:chocolate
+relayAdr:192.168.2.3:52181
+senderInfo:192.168.7.1:55982:0
+clientAdr:192.168.4.2:41469
+tag:1
+value:fudge
+ttl:96
+
+rteTbl=[(/192.168.2.4:55532,1073741823), (/192.168.1.1:43692,1610612734), (/192.168.7.1:55982,0)]
+rteTbl=[(/192.168.2.4:55532,1073741823), (/192.168.1.1:43692,1610612734), (/192.168.7.1:55982,0)]
+/192.168.2.3:52181 sending packet to /192.168.4.2:41469
+CSE473 DHTPv0.1
+type:success
+key:chocolate
+tag:1
+value:fudge
+ttl:96
+

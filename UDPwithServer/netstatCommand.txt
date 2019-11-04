@@ -1,0 +1,7 @@
+kaiashk@onlusr:~/cse473s-f19-students-gai.ashkenazy/lab2$ cat netstatCommand.txt
+tcp6       0      0 192.168.7.1:30123       :::*                    LISTEN
+
+
+tcp6       0      0 192.168.7.1:30123       :::*                    LISTEN
+tcp6       0      0 192.168.7.1:30123       192.168.4.2:59166       ESTABLISHED
+kaiashk@onlusr:~/cse473s-f19-students-gai.ashkenazy/lab2$

@@ -1,0 +1,101 @@
+#! /bin/bash
+source /users/onl/.topology
+
+root=~/cse473s-f19-students-gai.ashkenazy/lab3
+
+ssh $h7x1 "cd ${root}; java DhtServer h7x1 $1 cfg0 $2 debug >test2/log$1$2_0 &"
+sleep 1
+ssh $h2x4 "cd ${root}; java DhtServer h2x4 $1 cfg4 $2 debug cfg0 >test2/log$1$2_4 &"
+sleep 1
+ssh $h3x2 "cd ${root}; java DhtServer h3x2 $1 cfg2 $2 debug cfg0 >test2/log$1$2_2 &"
+sleep 1
+ssh $h2x5 "cd ${root}; java DhtServer h2x5 $1 cfg3 $2 debug cfg2 >test2/log$1$2_3 &"
+sleep 1
+ssh $h1x1 "cd ${root}; java DhtServer h1x1 $1 cfg6 $2 debug cfg4 >test2/log$1$2_6 &"
+sleep 1
+ssh $h5x2 "cd ${root}; java DhtServer h5x2 $1 cfg7 $2 debug cfg6 >test2/log$1$2_7 &"
+sleep 1
+
+echo put foo bar
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg0 put foo bar"
+echo put who hah
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg2 put who hah"
+echo get foo
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg6 get foo"
+echo get who
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg3 get who"
+echo get goodbye
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg7 get goodbye"
+echo get
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg6 get"
+echo get bar
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg0 get bar"
+echo put foo "toast is tasty"
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg4 put foo 'toast is tasty'"
+echo get foo
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg3 get foo"
+
+echo put flim flam
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg2 put flim flam"
+echo put flip flop
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg7 put flip flop"
+echo put slim jim
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg0 put slim jim"
+echo put abra cadabra
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg2 put abra cadabra"
+echo put chocolate fudge
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg4 put chocolate fudge"
+echo put dungeons dragons
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg3 put dungeons dragons"
+echo put political follies
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg2 put political follies"
+echo put fantasy football
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg6 put fantasy football"
+
+echo get flim
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg0 get flim"
+echo get flip
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg4 get flip"
+echo get slim
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg3 get slim"
+echo get abra
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg7 get abra"
+echo get chocolate
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg6 get chocolate"
+echo get dungeons
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg4 get dungeons"
+echo get political
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg2 get political"
+echo get fantasy
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg3 get fantasy"
+
+ssh $h6x1 "cd ${root}; java DhtServer h6x1 $1 cfg1 $2 debug cfg0 >test2/log$1$2_1 &"
+sleep 2
+ssh $h2x3 "cd ${root}; java DhtServer h2x3 $1 cfg5 $2 debug cfg4 >test2/log$1$2_5 &"
+sleep 2
+
+echo get flim
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg2 get flim"
+echo get flip
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg1 get flip"
+echo get slim
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg6 get slim"
+echo get abra
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg7 get abra"
+echo get chocolate
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg5 get chocolate"
+echo get dungeons
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg3 get dungeons"
+echo get political
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg4 get political"
+echo get fantasy
+ssh $h4x2 "cd ${root}; java DhtClient h4x2 cfg2 get fantasy"
+
+ssh $h7x1 "killall -9 java"
+ssh $h6x1 "killall -9 java"
+ssh $h3x2 "killall -9 java"
+ssh $h2x5 "killall -9 java"
+ssh $h2x4 "killall -9 java"
+ssh $h2x3 "killall -9 java"
+ssh $h1x1 "killall -9 java"
+ssh $h5x2 "killall -9 java"

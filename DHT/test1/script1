@@ -1,0 +1,75 @@
+cd ../
+
+java DhtServer localhost $1 cfg0 $2 debug >test1/log$1$2_0 &
+sleep 1
+java DhtServer localhost $1 cfg2 $2 debug cfg0 >test1/log$1$2_2 &
+sleep 1
+
+KILL_PID=$! #get the PID of server 2
+
+java DhtServer localhost $1 cfg1 $2 debug cfg0 >test1/log$1$2_1 &
+sleep 1
+java DhtServer localhost $1 cfg3 $2 debug cfg2 >test1/log$1$2_3 &
+sleep 1
+
+echo put foo bar
+java DhtClient localhost cfg0 put foo bar
+echo put who hah
+java DhtClient localhost cfg1 put who hah
+echo put junk mail
+java DhtClient localhost cfg3 put junk mail
+echo put blue moose
+java DhtClient localhost cfg2 put blue moose
+echo get foo
+java DhtClient localhost cfg3 get foo
+echo get who
+java DhtClient localhost cfg2 get who
+echo get goodbye
+java DhtClient localhost cfg0 get goodbye
+echo get blue
+java DhtClient localhost cfg1 get blue
+echo get
+java DhtClient localhost cfg2 get
+echo get bar
+java DhtClient localhost cfg3 get bar
+echo put foo "toast is tasty"
+java DhtClient localhost cfg2 put foo "toast is tasty"
+echo get foo
+java DhtClient localhost cfg0 get foo
+echo get blue
+java DhtClient localhost cfg3 get blue
+echo get blue
+java DhtClient localhost cfg1 get blue
+echo get blue
+java DhtClient localhost cfg2 get blue
+echo get blue
+java DhtClient localhost cfg0 get blue
+echo get blue
+java DhtClient localhost cfg3 get blue
+echo get blue
+java DhtClient localhost cfg1 get blue
+echo get blue
+java DhtClient localhost cfg2 get blue
+echo get blue
+java DhtClient localhost cfg0 get blue
+
+kill -15 $KILL_PID 	# kill server 2 which generate a "TERM" signal
+wait $KILL_PID 		# wait until server 2 terminated
+
+echo get blue
+java DhtClient localhost cfg0 get blue
+
+echo get foo  
+java DhtClient localhost cfg3 get foo
+
+echo get junk
+java DhtClient localhost cfg1 get junk
+
+#silently kill all java process
+exec 3>&2          # 3 is now a copy of 2
+exec 2> /dev/null  # 2 now points to /dev/null
+killall -9 java >/dev/null 2>&1
+sleep 1            # sleep to wait for process to die
+exec 2>&3          # restore stderr to saved
+exec 3>&-          # close saved version
+

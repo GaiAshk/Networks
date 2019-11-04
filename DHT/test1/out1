@@ -1,0 +1,176 @@
+put foo bar
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:bar
+ttl:98
+
+put who hah
+CSE473 DHTPv0.1
+type:success
+key:who
+tag:1
+value:hah
+ttl:94
+
+put junk mail
+CSE473 DHTPv0.1
+type:success
+key:junk
+tag:1
+value:mail
+ttl:95
+
+put blue moose
+CSE473 DHTPv0.1
+type:success
+key:blue
+tag:1
+value:moose
+ttl:98
+
+get foo
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:bar
+ttl:96
+
+get who
+CSE473 DHTPv0.1
+type:success
+key:who
+tag:1
+value:hah
+ttl:95
+
+get goodbye
+CSE473 DHTPv0.1
+type:no match
+key:goodbye
+tag:1
+ttl:98
+
+get blue
+CSE473 DHTPv0.1
+type:success
+key:blue
+tag:1
+value:moose
+ttl:96
+
+get
+Usage: DhtClient serverName configurationFile command key [value] [ttl]
+get bar
+CSE473 DHTPv0.1
+type:no match
+key:bar
+tag:1
+ttl:94
+
+put foo toast is tasty
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:toast is tasty
+ttl:95
+
+get foo
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:toast is tasty
+ttl:98
+
+get blue
+CSE473 DHTPv0.1
+type:success
+key:blue
+tag:1
+value:moose
+ttl:94
+
+get blue
+CSE473 DHTPv0.1
+type:success
+key:blue
+tag:1
+value:moose
+ttl:96
+
+get blue
+CSE473 DHTPv0.1
+type:success
+key:blue
+tag:1
+value:moose
+ttl:98
+
+get blue
+CSE473 DHTPv0.1
+type:success
+key:blue
+tag:1
+value:moose
+ttl:95
+
+get blue
+CSE473 DHTPv0.1
+type:success
+key:blue
+tag:1
+value:moose
+ttl:94
+
+get blue
+CSE473 DHTPv0.1
+type:success
+key:blue
+tag:1
+value:moose
+ttl:96
+
+get blue
+CSE473 DHTPv0.1
+type:success
+key:blue
+tag:1
+value:moose
+ttl:98
+
+get blue
+CSE473 DHTPv0.1
+type:success
+key:blue
+tag:1
+value:moose
+ttl:95
+
+get blue
+CSE473 DHTPv0.1
+type:success
+key:blue
+tag:1
+value:moose
+ttl:96
+
+get foo
+CSE473 DHTPv0.1
+type:success
+key:foo
+tag:1
+value:toast is tasty
+ttl:96
+
+get junk
+CSE473 DHTPv0.1
+type:success
+key:junk
+tag:1
+value:mail
+ttl:98
+
