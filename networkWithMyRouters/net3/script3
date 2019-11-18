@@ -8,7 +8,7 @@ debug=$5
 
 echo "delta=" $delta " runlength=" $runlength $static $debug
 
-root=473/lab5
+root=cse473s-f19-students-gai.ashkenazy/lab5
 numRtrs=9
 
 host[1]=$h6x1

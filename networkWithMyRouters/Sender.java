@@ -113,6 +113,7 @@ public class Sender implements Runnable {
 				nothing2do = false;
 				// keep going while there are app packets
 				if (p.protocol == 1) eventTime = now;
+//				if (p.protocol == 1) System.out.println("Sender:still p.protocol = 1");
 				if (firstEventTime == 0) firstEventTime = now;
 			}
 

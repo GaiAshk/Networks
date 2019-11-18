@@ -9,7 +9,7 @@ enFA=$6
 
 echo "delta=" $delta " runlength=" $runlength $static $debug
 
-root=473/lab5
+root=cse473s-f19-students-gai.ashkenazy/lab5
 numRtrs=4
 
 host[1]=$h4x2

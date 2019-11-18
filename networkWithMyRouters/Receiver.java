@@ -72,6 +72,7 @@ public class Receiver implements Runnable {
                 	}
 			// keep going while there are app packets
 			if (p.protocol == 1) eventTime = now;
+//			if (p.protocol == 1) System.out.println("Receiver:still p.protocol = 1");
 			pp = null;
 			int i = 0;
 			for (NborInfo nbor : nborList) {
